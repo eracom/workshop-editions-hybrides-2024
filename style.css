@@ -1,0 +1,203 @@
+/* DEGHEEST */
+@font-face {
+    font-family: 'Abordage';
+    src: url('fonts/Abordage-Regular.woff2') format('woff2'),
+        url('fonts/Abordage-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.degheest-abordage {
+    font-family: "Abordage";
+}
+@font-face {
+    font-family: 'Director';
+    src: url('fonts/Director-Regular.woff2') format('woff2'),
+        url('fonts/Director-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.degheest-director {
+    font-family: "Director";
+}
+@font-face {
+    font-family: 'Equateur';
+    src: url('fonts/Equateur-Regular.woff2') format('woff2'),
+        url('fonts/Equateur-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.degheest-equateur {
+    font-family: "Equateur";
+}
+@font-face {
+    font-family: 'Latitude';
+    src: url('fonts/Latitude-Regular.woff2') format('woff2'),
+        url('fonts/Latitude-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.degheest-latitude {
+    font-family: "Latitude";
+}
+@font-face {
+    font-family: 'Louise';
+    src: url('fonts/Louise-Regular.woff2') format('woff2'),
+        url('fonts/Louise-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.degheest-louise {
+    font-family: "Louise";
+}
+@font-face {
+    font-family: 'FT88Gothique';
+    src: url('fonts/FT88-Gothique.woff2') format('woff2'),
+        url('fonts/FT88-Gothique.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.degheest-FT88Gothique {
+    font-family: "FT88Gothique";
+}
+@font-face {
+    font-family: 'FT88Italic';
+    src: url('fonts/FT88-Italic.woff2') format('woff2'),
+        url('fonts/FT88-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.degheest-FT88Italic {
+    font-family: "FT88Italic";
+}
+@font-face {
+    font-family: 'FT88School';
+    src: url('fonts/FT88-School.woff2') format('woff2'),
+        url('fonts/FT88-School.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.degheest-FT88School {
+    font-family: "FT88School";
+}
+@font-face {
+    font-family: 'FT88-Regular';
+    src: url('fonts/FT88-Regular.woff2') format('woff2'),
+        url('fonts/FT88-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.degheest-FT88-Regular {
+    font-family: "FT88-Regular";
+}
+@font-face {
+    font-family: 'FT88-Serif';
+    src: url('fonts/FT88-Serif.woff2') format('woff2'),
+        url('fonts/FT88-Serif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.degheest-FT88-Serif {
+    font-family: "FT88-Serif";
+}
+@font-face {
+    font-family: 'Basalte-Fond';
+    src: url('fonts/Basalte-Fond.woff2') format('woff2'),
+        url('fonts/Basalte-Fond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.degheest-Basalte-Fond {
+    font-family: "Basalte-Fond";
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "Montserrat";
+    text-align: left;
+    width: 100%;
+    font-size: 30px;
+}
+.black {
+    background-color: black;
+}
+.pink {
+    background-color: #f82c8d;
+}
+.hybrides {
+    animation-name: change-font;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes change-font {
+    0%   {font-family: "Abordage";}
+    25%  {font-family: "Director";}
+    50%  {font-family: "Latitude";}
+    100% {font-family: "FT88-Regular";}
+  }
+  
+.content {
+    width: 1000px;
+    margin: auto;
+    padding-top: 5%;
+}
+img {
+    width: 150px;
+}
+p {
+    margin: 0px;
+}
+.logo, .text {
+    display: inline-block;
+    padding: 40px;
+}
+.text {
+    vertical-align: top;
+}
+tr {
+    padding: 10px;
+}
+td {
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+th {
+    vertical-align: top;
+    padding-bottom: 30px;
+}
+.table a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: black;
+}
+.table {
+    padding-top: 30px;
+}
+.black-cursor {
+    cursor: url("black.svg"), auto;
+}
+.black-cursor a {
+    cursor: url("blackblack.svg"), auto;
+}
+.groupe2 {
+    cursor: url("fleur4.png"), auto;
+}
+.groupe3, .groupe3 a {
+    cursor: url("edit.png"), auto;
+}
+.edit {
+    background-image: url("panneau.svg");
+}
+.edit .survol-cadre {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+}

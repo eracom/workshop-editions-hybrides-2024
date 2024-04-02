@@ -1,0 +1,662 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Fixes the initial browser’s style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 1.2em;
+  margin: 30px;
+  cursor: url('edit.png'), auto;
+
+
+
+}
+
+a,
+a:link,
+a:visited,
+a:hover {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+h1,
+.title-page {
+  display: table-cell;
+  padding-bottom: 20px;
+}
+
+h1 a,
+h1 a:link,
+h1 a:visited,
+h1 a:hover,
+a.sans-soulignement,
+a:link.sans-soulignement,
+a:visited.sans-soulignement,
+a:hover.sans-soulignement {
+  color: black;
+  border-bottom: 0px solid black;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+.click-scroll {
+  position: fixed;
+  z-index: 10;
+  width: 94%;
+  height: 81vh;
+  margin-top: 5%;
+  margin-left: 0%;
+  margin-right: 4%;
+  background-color: white;
+  display: flex;
+  border: 2px solid black;
+  justify-content: center;
+}
+
+
+.bravo {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  top: 5%;
+  left: 5vh;
+  width: 90%;
+  height: 90vh;
+  background-color: rgb(255, 255, 255);
+  font-size: 40px;
+  border: 2px solid black;
+}
+
+
+#outro {
+ max-height: 100%;
+  max-width: 100%;
+}
+
+.title-page {
+  padding-left: 100px;
+}
+
+header {
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 0 10px 30px;
+}
+
+select {
+  width: 230px;
+  height: 32px;
+  font-size: 0.7em;
+  vertical-align: 3px;
+  letter-spacing: 1px;
+  padding: 3px;
+  margin-left: 2px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
+  box-shadow: 0;
+  background: ;
+  color: #888;
+  border: 2px solid black;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0 30px 30px 30px;
+  background-color: white;
+  border: 0;
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+figcaption {
+  font-size: 10pt;
+}
+
+.questions-reponses {
+  max-width: 800px;
+}
+
+.questions-reponses img {
+  max-width: 750px;
+}
+
+.interview-intro {
+  margin-bottom: 30px;
+}
+
+.nom-interviewer {
+  font-weight: bold;
+  font-size: 0.7em;
+  margin-right: 0.4em;
+}
+
+.A {}
+
+.B {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+audio{
+  visibility: hidden;
+}
+
+.boîte {
+  display: flex;
+  margin-top: 0%;
+  margin-bottom: 2.5em;
+}
+
+
+.icons {
+  display: inline-block;
+  padding: 3%;
+}
+
+.icons img {
+  width: auto;
+}
+
+.icon {
+
+  border: 0;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  animation: anime 1s infinite ease-in-out alternate;
+  -webkit-animation: anime 1s infinite ease-in-out alternate;
+  cursor: url('editsurpri.png'), auto;
+}
+
+.icon2 {
+
+  border: 0;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+
+  animation: anime 1s infinite ease-in-out alternate;
+  -webkit-animation: anime 1s infinite ease-in-out alternate;
+  animation-delay: .3s;
+  cursor: url('editsurpri.png'), auto;
+}
+
+.icon-chapeau-cache,
+.chapeau-icon {
+  margin: 3%;
+  position: absolute;
+}
+
+.icon-chapeau-cache {
+  top: 0;
+  left: 0;
+}
+
+.chapeau-icon {
+  top: 50px;
+  left: 8px;
+}
+
+.chapeau-icon img {
+  width: auto;
+}
+
+
+#imageInvisible {
+  position: absolute;
+  /* ou 'relative' selon le contexte */
+  top: 2450px;
+  /* Ajustez cette valeur pour déplacer verticalement */
+  left: 466px;
+  /* Ajustez cette valeur pour déplacer horizontalement */
+  opacity: 0;
+  /* Garde l'image invisible initialement */
+  cursor: url('edit.png'), auto;
+}
+
+
+
+
+
+.para p:hover {
+  animation: shake 0.5s;
+
+}
+
+.para {}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateX(25px);
+  }
+
+  50% {
+    transform: translateX(-25px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+.trouvemot {
+  display: flex;
+}
+
+#inputMot {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  position: relative;
+}
+
+.correct {
+  border-color: green;
+  background-color: #b8f3b8;
+}
+
+.lvl4 {
+  position: absolute;
+  left: 10em;
+  top: 5340px;
+
+}
+
+.container p {
+  margin-top: 25px;
+}
+
+.next8 {
+  display: flex;
+}
+
+
+.verification-zone {
+  width: 100%;
+  height: 300px;
+  margin: 10px auto;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  background-image: url('URL_IMAGE_VERIFICATION.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s;
+}
+
+
+
+.verification-zone.green {
+
+
+  background-image: url('URL_IMAGE_VERIFICATIONVERT.png');
+  width: 100%;
+  height: 300px;
+  margin: 10px auto;
+  border: none;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s;
+}
+
+
+.lvl3{
+  position: relative;
+  display: none;
+}
+.lvl3 img {
+  position: absolute;
+  top: -183px;
+  left: 338px;
+  cursor: url(editsurpri.png), auto;
+}
+
+
+
+
+.click-instru{
+
+  position: absolute;
+  top: 15em;
+  z-index: 9;
+  width: 20%;
+  height: 28vh;
+  margin-left: 70%;
+  margin-right: 10%;
+  box-shadow: 3.5px 3px 4px rgb(175, 174, 174);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(66, 65, 65);
+
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+.click-instru img{
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+
+.click-instru2 {
+
+  position: absolute;
+  top: 113em;
+  z-index: 9;
+  width: 20%;
+  height: 28vh;
+  margin-left: 70%;
+  margin-right: 10%;
+  box-shadow: 3.5px 3px 4px rgb(175, 174, 174);
+  background-color: white;
+  border: 2px solid rgb(66, 65, 65);
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+
+.click-instru2 img{
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.click-instru3 {
+
+  position: absolute;
+  top: 447em;
+  z-index: 9;
+  width: 20%;
+  height: 28vh;
+  margin-left: 70%;
+  margin-right: 10%;
+  box-shadow: 3.5px 3px 4px rgb(175, 174, 174);
+  background-color: white;
+  border: 2px solid rgb(66, 65, 65);
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+.click-instru3 img{
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.click-instru4 {
+
+  position: absolute;
+  top: 289em;
+  z-index: 9;
+  width: 20%;
+  height: 28vh;
+  margin-left: 70%;
+  margin-right: 10%;
+  box-shadow: 3.5px 3px 4px rgb(175, 174, 174);
+  background-color: white;
+  border: 2px solid rgb(66, 65, 65);
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+
+.click-instru4 img{
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+
+.indic{
+  top:527em;
+  position: absolute;
+  bottom: 0%;
+ 
+  z-index: 9;
+  width: 20%;
+  height: 28vh;
+  margin-left: 70%;
+  margin-right: 10%;
+
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+
+
+
+.indic2{
+  position: sticky;
+  position: -webkit-sticky;
+position: absolute;
+  top:390em;
+  z-index: 9;
+  width: 20%;
+  height: 28vh;
+  margin-left: 70%;
+  margin-right: 10%;
+
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+
+
+.indic3{
+
+  position: absolute;
+  top:325em;
+  z-index: 9;
+  width: 20%;
+  height: 28vh;
+  margin-left: 70%;
+  margin-right: 10%;
+
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+
+
+.indic4{
+
+  position: absolute;
+  top:250em;
+  z-index: 9;
+  width: 20%;
+  height: 28vh;
+  margin-left: 70%;
+  margin-right: 10%;
+
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+
+
+.indic5{
+
+  position: absolute;
+  top:193em;
+  z-index: 9;
+  width: 20%;
+  height: 28vh;
+  margin-left: 70%;
+  margin-right: 10%;
+
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+
+.indic6{
+
+  position: absolute;
+  top:152em;
+  z-index: 9;
+  width: 20%;
+  height: 28vh;
+  margin-left: 70%;
+  margin-right: 10%;
+
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+
+.indic7{
+
+  position: absolute;
+  top:50em;
+  z-index: 9;
+  width: 20%;
+  height: 28vh;
+  margin-left: 70%;
+  margin-right: 10%;
+
+  cursor: url('editsurpri.png'), auto;
+
+}
+
+
+
+
+@keyframes anime {
+
+  100% {
+
+    transform: translateY (20px);
+    -webkit-transform: translateY (20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+  }
+}
+
+
+@-webkit-keyframes icon {
+  0% {
+    left: 10px;
+  }
+
+  50% {
+    left: 400px;
+  }
+
+  100% {
+    left: 10px;
+  }
+}
+
+@-moz-keyframes icon {
+  0% {
+    left: 10px;
+  }
+
+  50% {
+    left: 400px;
+  }
+
+  100% {
+    left: 10px;
+  }
+}
+
+@keyframes icon {
+  0% {
+    left: 10px;
+  }
+
+  50% {
+    left: 400px;
+  }
+
+  100% {
+    left: 10px;
+  }
+}
+
+
+.chute {
+    cursor:  url('editsurpris.png'), auto;
+  }
+
+
+.dragdrop {
+  background-color: red;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  -webkit-animation-name: redBox;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: redBox;
+  -moz-animation-duration: 5s;
+  -moz-animation-iteration-count: infinite;
+  animation-name: redBox;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}

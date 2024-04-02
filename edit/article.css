@@ -1,0 +1,106 @@
+h3 {
+    margin-top: 50px;
+}
+p {
+    margin-top: 30px;
+    line-height: 1.3em;	
+}
+a {
+    outline: none;
+}
+.presentation {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 45px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.click-big {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+figure {
+    margin-top: 40px;
+}
+figure img {
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+}
+.shadow img {
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.5);
+    border: 1px solid black;
+}
+figcaption {
+    margin-top: 10px;
+    line-height: 1.3em;
+}
+.pres-big {
+    height: 100vh;
+}
+h3.pres-big {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 45vh;
+}
+.pres-big img {
+    display: block;
+    margin: auto;
+}
+.pres-big figcaption {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+.pres-big img {
+    width: auto;
+    max-height: 80vh;
+    padding-top: 50px;
+}
+a.click-next {
+    border-bottom: 0;
+}
+
+@media print {
+    .presentation {
+        display: none;
+    }
+    a, a:link, a:target, a:visited {
+        border-bottom: 0.8px solid black;
+    }
+    figure img {
+        width: 10cm;
+    }
+    figcaption {
+        width: 10cm;
+    }
+    p, li {
+        font-size: 0.7em;
+        line-height: 1.3em;
+        width: 15cm;
+    }
+    p {
+        margin-top: 0.2cm;
+    }
+    li {
+        line-height: 0.9em;
+    }
+    h3 {
+        font-size: 0.9em;
+        margin-top: 0.6cm;
+        width: 15cm;
+    }
+}

@@ -1,0 +1,174 @@
+/* Fixes the initial browserâ€™s style */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+.grid-container.grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); /* Set rows to take up the entire height */
+    position: fixed; /* Fix it to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999; /* Ensure it's above other content */
+}
+.paragraph1,
+.paragraph2{
+  height: 5vh;
+  padding: 2px;
+}
+.grid-container {
+  display: grid;
+}
+.top-image{
+  grid-column: 2;
+  grid-row: 1;
+  height: 5vh;
+  padding: 2px;
+}
+.left-image{
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  padding: 2px;
+}
+.image{
+  grid-column: 2;
+  grid-row: 2;
+  height: 23vh;
+  padding: 2;
+}
+.right-image{
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  padding: 2px;
+}
+.bottom-image{
+  grid-column: 2;
+  grid-row: 3;
+  height: 5vh;
+  padding: 2px;
+}
+.paragraph1{
+  grid-column: 2;
+  grid-row: 2;
+}
+.paragraph2{
+  grid-column: 2;
+  grid-row: 6;
+}
+.top-paragraph1{
+  grid-column: 2;
+  grid-row: 1;
+}
+.right-paragraph1{
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  padding: 2px;
+}
+.left-paragraph1{
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  padding: 2px;
+}
+.bottom-paragraph1{
+  grid-column: 2;
+  grid-row: 3;
+}
+.middle{
+  grid-column: 1 / span 3;
+  grid-row: 4;
+  height: 2vh;
+  padding: 2px;
+}
+.top-paragraph2{
+  grid-column: 2;
+  grid-row: 5;
+}
+.right-paragraph2{
+  grid-column: 3;
+  grid-row: 5 / span 3;
+  padding: 2px;
+}
+.left-paragraph2{
+  grid-column: 1;
+  grid-row: 5 / span 3;
+  padding: 2px;
+}
+.bottom-paragraph2{
+  grid-column: 2;
+  grid-row: 7;
+}
+.grid-item {
+  align-content: center;
+}
+#grid2 {
+    display: none;
+}
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  height: 100vh;
+}
+.item3{
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  height: 100vh;
+}
+.item4{
+  grid-column: 2 / span 1;
+  grid-row: 1; 
+  height: 10vh;
+  padding-top: 50px;
+}
+.item5{
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 2;
+  height: 90vh;
+}
+.item6{
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  height: 20vh;
+  margin-bottom: 80px;
+}
+.item7{
+  grid-column: 1;
+  grid-row: 2;
+  margin-right: 40px;
+}
+.item8{
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.item9{
+  grid-column: 3;
+  grid-row: 2;
+  margin-left: 40px;
+}
+.item7,.item8,.item9{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.grid3,.grid4,.grid5 {
+  flex: 1;
+}
+.top-paragraph1, .top-paragraph2,
+.bottom-paragraph1, .bottom-paragraph2,
+.middle, .top-image, .bottom-image,.image,.paragraph1,.paragraph2 {
+  height: auto;
+}

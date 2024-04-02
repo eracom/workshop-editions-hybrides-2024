@@ -1,0 +1,339 @@
+/* Fixes the initial browserâ€™s style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body, html {
+  background-color: #f82c8d;
+  color:rgb(48, 8, 208); 
+  overflow: hidden;
+
+  cursor: url("cursor/fleur1.png"), auto;
+  
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.cactus {
+  position: absolute;
+  top: 111px;
+  left: 1585px;
+  height: 868px;
+  filter: invert(7%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  cursor: url("cursor/fleur2.png"), auto;
+}
+
+.textcactus {
+  position: absolute;
+  top: 61px;
+  left: 1538px;
+  height: 922px;
+  filter: invert(7%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  cursor: url("cursor/fleur2.png"), auto;
+}
+
+.main{
+  cursor: url("cursor/fleur2.png"), auto;
+  position:absolute;
+  left: 825px ;
+  top: 190px;
+  width: 234px; 
+  height: 404px;
+  animation-name: main;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  color: #00dd67;
+  
+  
+
+} 
+@keyframes main {
+
+  0% {
+    transform: translateY(25%);
+  }
+  50% {
+    transform: translateY(0%); 
+  }
+  100% {
+    transform: translateY(25%); 
+  }
+}
+  
+
+  
+  
+.legende-image {
+  z-index: 1;
+  background-color: transparent;
+  max-width: 200px;
+  max-height: 150px;
+  min-width: 40px;
+  min-height: 10px;
+  top: 80px;
+  left: 1300px;
+
+
+  padding: 35px;
+  
+  
+  display: none;
+  overflow: scroll;
+
+}
+  
+.close-popup {
+  position: absolute;
+
+ 
+  -webkit-text-stroke-width: 0px;
+  font-size: 13px;
+  padding: 3px;
+  top: 30px;
+  left: 0px;
+
+
+  border-radius: 20px;
+
+}
+
+.textmontain {
+  
+  position: absolute;
+  top: 364px;;
+  width: 1521px;
+  left: -43px ;
+  
+
+}
+
+.montain{
+  cursor: url("cursor/fleur3.png"), auto;
+  position: absolute;
+  top: 268px;;
+  width: 1465px;
+  
+
+}
+
+.fresia{
+  cursor: url("cursor/fleur4.png"), auto;
+  position:absolute;
+  left: 1364px ;
+  top: 268px;
+  width: 250px; 
+  opacity: 0; /* Inicialmente invisible */
+  transition: opacity 0.5s ease; /* Transición suave */
+}
+
+.fresia:hover {
+  opacity: 1; /* Hacer visible cuando se pasa el ratón */
+}
+
+.gloxinia{
+  cursor: url("cursor/fleur4.png"), auto;
+  position:absolute;
+  left: 1108px ;
+  top: 276px;
+  width: 263px; 
+  opacity: 0; /* Inicialmente invisible */
+  transition: opacity 0.5s ease; /* Transición suave */
+}
+
+.gloxinia:hover {
+  opacity: 1; /* Hacer visible cuando se pasa el ratón */
+}
+
+
+
+
+
+.nastu{
+  cursor: url("cursor/fleur5.png"), auto;
+  position:absolute;
+  left: 1223px ;
+  top: 196px;
+  width: 292px; 
+ 
+  
+  
+}
+
+
+
+.miroir1{
+  cursor: url("cursor/fleur6.png"), auto;
+    position:absolute;
+    top: -4px;
+    left: 362px;
+    width: 300px; 
+    height: 330px;
+  }
+  .miroir1:hover {
+    animation: trembler 0.5s ease-in-out infinite;
+  }
+  
+  @keyframes trembler {
+    0% { transform: translateX(0); }
+    45% { transform: translateX(-5px) rotate(-1deg); }
+    50% { transform: translateX(5px) rotate(1deg); }
+    75% { transform: translateX(-5px) rotate(1deg); }
+    100% { transform: translateX(0); }
+  }
+
+
+.miroir2{
+  cursor: url("cursor/fleur7.png"), auto;
+  height: 342px;
+  position:relative;
+  margin-top: 45px;
+  
+}
+
+.miroir2:hover {
+  animation: trembler 0.5s ease-in-out infinite;
+}
+
+@keyframes trembler {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-1deg); }
+  50% { transform: translateX(5px) rotate(1deg); }
+  75% { transform: translateX(-5px) rotate(1deg); }
+  100% { transform: translateX(0); }
+}
+
+
+.women{
+  cursor: url("cursor/fleur4.png"), auto;
+  position: absolute;
+  left: 1029px;
+  top: 481px;
+  width: 600px;
+  
+}
+.women:hover {
+  /* animation: scaleUp 2s ease 0s 1 alternate forwards; */
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+@keyframes scaleUp {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.cora {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 176px;
+  right: 510px;
+  animation: beat 1s infinite;
+  }
+  
+  .cora:before,
+  .cora:after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  }
+  
+  .cora:after {
+    left: 0;
+  }
+  
+  @keyframes beat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .h1 {
+    position: relative;
+    right:20px;
+    bottom: 20px;
+  }
+  .soleil{
+    cursor: url("cursor/fleur4.png"), auto;
+    position: relative;
+    top: 20px;
+    right: -96px;
+    width: 227px;
+  }
+  audio {
+    visibility: hidden;
+  }
+  button {
+    cursor: url(play.svg), auto;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: greenyellow;
+    text-stroke-width: 2px;
+    text-stroke-color: greenyellow;
+    font-size: 50px;
+    min-width: 30px;
+    min-height: 30px;
+    background-color: #fff0;
+    padding: 6px 
+  }
+  
+  .pause {
+    cursor: url(pause.svg), auto;
+  }
+  
+  .button-play, .close {
+    font-size: 50px;
+    margin: 10px 0 0 10px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: greenyellow;
+    text-stroke-width: 2px;
+    text-stroke-color: greenyellow;
+  }
+  
+  .no-button button {
+      border: 0;
+  }
+
+  .text-block {
+    z-index: 1;
+    position:absolute;
+    bottom:0px;
+    border-style: dashed;
+    border: 4px solid #ffff00;
+    border-style: dashed;
+    padding: 33px;
+    font-size: 22px;
+    text-shadow:#ff006e 2.5px 2.5px 0,
+    #8338ec 5px 5px 0,
+    #3a86ff 7.5px 7.5px 0,
+    #333 10px 10px 10px;color:#ffcc00;
+    background-color:#2E8ECE;
+    
+    }
+
